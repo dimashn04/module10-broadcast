@@ -12,3 +12,9 @@ However, if for example we only change one of the ports, for example the client 
 ![](2.2.3.png)  
 ![](2.2.4.png)  
 
+**2.3. Small changes. Add some information to client**  
+![](2.3.1.png)  
+The result in the photo above was achieved by changing the code in bin/server.rs to the following.  
+
+![](2.3.2.png)  
+The change is made so that when `bcast.tx` (which is the sender) sends a message to each subscriber it will also provide the sender IP of the text through the addr variable.  
